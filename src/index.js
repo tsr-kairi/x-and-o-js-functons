@@ -18,3 +18,28 @@ function XO(str) {
 //   let o = str.match(/o/gi);
 //   return (x && x.length) === (o && o.length);
 // }
+
+// const XO = str => {
+//   str = str.toLowerCase().split('');
+//   return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
+// }
+
+// function XO(str) {
+//   var a = str.replace(/x/gi, ''),
+//       b = str.replace(/o/gi, '');
+//   return a.length === b.length;
+// }
+
+// function XO(str) {
+//   return str.toLowerCase().split('x').length === str.toLowerCase().split('o').length;
+// }
+
+// function XO(str) {
+//   return str.replace(/o/ig, '').length == str.replace(/x/ig, '').length
+// }
+
+// const XO = str => {
+//   let x = (str.match(/x|X/g) || []).length;
+//   let o = (str.match(/o|O/g) || []).length;
+//   return x === o;
+// }
